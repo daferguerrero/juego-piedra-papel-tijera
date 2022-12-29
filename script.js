@@ -33,13 +33,7 @@ while (perder <3 && ganar < 3) {
   //COMBATE
   if (jugador == pc) {
     alert("Empate entre juagador y pc...!!");
-  } else if (jugador == 1 && pc == 3) {
-    alert("Jugador gana el combate");
-    ganar = ganar +1;
-  } else if (jugador == 2 && pc == 1) {
-    alert("Jugador gana el combate");
-    ganar = ganar + 1;
-  } else if (jugador == 3 && pc == 2) {
+  } else if (jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2) {
     alert("Jugador gana el combate");
     ganar = ganar + 1;
   } else {
