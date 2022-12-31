@@ -50,18 +50,3 @@ while (perder <3 && ganar < 3) {
 
 alert("Jugador gano " + ganar + " veces y perdio " + perder + " veces")
 
-
-
-
-//COMBATE: Codigo corto
-/*
-if (jugador == pc) {
-  alert("Empate entre juagador y pc...!!");
-} else if (jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2) {
-  alert("Jugador gana el combate");
-  ganar = ganar + 1;
-} else {
-  alert("pc gana el combate");
-  perder = perder  + 1;
-}
-*/
