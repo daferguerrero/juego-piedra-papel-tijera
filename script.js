@@ -3,6 +3,7 @@ let pc = 0
 let perder = 0
 let ganar = 0
 
+
 function aleatorio(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -21,6 +22,7 @@ function jugada(seleccion) {
   return resultado;
 }
 
+
 while (perder <3 && ganar < 3) {
   jugador = prompt("Selecciona 1)🥌, 2)📄, 3)✂");
   pc = aleatorio(1, 3);
@@ -31,9 +33,13 @@ while (perder <3 && ganar < 3) {
   //COMBATE
   if (jugador == pc) {
     alert("Empate entre juagador y pc...!!");
-  } else if (jugador == pc) {
-  alert("Empate entre juagador y pc...!!");
-  } else if (jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2) {
+  } else if (jugador == 1 && pc == 3) {
+    alert("Jugador gana el combate");
+    ganar = ganar +1;
+  } else if (jugador == 2 && pc == 1) {
+    alert("Jugador gana el combate");
+    ganar = ganar + 1;
+  } else if (jugador == 3 && pc == 2) {
     alert("Jugador gana el combate");
     ganar = ganar + 1;
   } else {
@@ -43,3 +49,19 @@ while (perder <3 && ganar < 3) {
 }
 
 alert("Jugador gano " + ganar + " veces y perdio " + perder + " veces")
+
+
+
+
+//COMBATE: Codigo corto
+/*
+if (jugador == pc) {
+  alert("Empate entre juagador y pc...!!");
+} else if (jugador == 1 && pc == 3) || (jugador == 2 && pc == 1) || (jugador == 3 && pc == 2) {
+  alert("Jugador gana el combate");
+  ganar = ganar + 1;
+} else {
+  alert("pc gana el combate");
+  perder = perder  + 1;
+}
+*/
